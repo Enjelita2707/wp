@@ -1,0 +1,8 @@
+<li <?php echo ($this->uri->segment(1) == '' || $this->uri->segment(1) == 'home') ? 'class="active"' : ''; ?>><a href="<?php echo site_url(); ?>"><i class="fa fa-home"></i> <span>Beranda</span></a></li>
+<li <?php echo ($this->uri->segment(1) == 'kriteria' || $this->uri->segment(1) == 'subkriteria') ? 'class="active"' : ''; ?>><a href="<?php echo site_url('kriteria'); ?>"><i class="fa fa-file-text"></i> <span>Data Kriteria</span></a></li>
+<li <?php echo $this->uri->segment(1) == 'alternatif' ? 'class="active"' : ''; ?>><a href="<?php echo site_url('alternatif'); ?>"><i class="fa fa-file-text"></i> <span>Data Alternatif</span></a></li>
+<li <?php echo $this->uri->segment(1) == 'penilaian' ? 'class="active"' : ''; ?>><a href="<?php echo site_url('penilaian'); ?>"><i class="fa fa-file-text"></i> <span>Rekap Penilaian</span></a></li>
+<li <?php echo $this->uri->segment(1) == 'hasil' ? 'class="active"' : ''; ?>><a href="<?php echo site_url('hasil'); ?>"><i class="fa fa-graduation-cap"></i> <span>Hasil</span></a></li>
+<li <?php echo ($this->uri->segment(1) == 'admin' && $this->uri->segment(2) != 'password') ? 'class="active"' : ''; ?>><a href="<?php echo site_url('admin'); ?>"><i class="fa fa-user"></i> <span>Admin</span></a></li>
+<li <?php echo ($this->uri->segment(1) == 'admin' && $this->uri->segment(2) == 'password') ? 'class="active"' : ''; ?>><a href="<?php echo site_url('admin/password'); ?>"><i class="fa fa-cog"></i> <span>Ubah Password</span></a></li>
+<li><a href="<?php echo site_url('login/logout'); ?>"><i class="fa fa-sign-out"></i> <span>Keluar</span></a></li>
